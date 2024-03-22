@@ -45,7 +45,7 @@ app.use(cors({
 }))
 
 
-const stripe = require('stripe')('sk_test_51I7H7GC7Q0v6DfFzct8t6I1YfxDlaeYOH5QTrRkmLpoA5hCmTXSLumDr6LFRmxfp3vPKzTOEPDjJ1Hle0MHX0n3F00NZvVHhEu');
+const stripe = require('stripe')('Your Stripe Secret Key');
 
 // Endpoint to create a Payment Intent
 app.post('/create-payment-intent', async (req, res) => {
