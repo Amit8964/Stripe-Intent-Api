@@ -57,10 +57,7 @@ app.post('/create-payment-intent', async (req, res) => {
       amount:amount,
       currency:"usd", 
      description: 'A beautiful t-shirt',
-  
        
-      
-      
     });
 
     if(!paymentIntent){
@@ -77,8 +74,6 @@ app.post('/create-payment-intent', async (req, res) => {
     res.status(500).json({ error: 'Failed to create Payment Intent' });
   }
 })
-
-
 
 app.post("/payment",(req,res)=>{
 
